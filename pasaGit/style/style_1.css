@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+  font-family: 'Londrina Solid';
+
+  color: rgba(0, 0, 0, 0.907);
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  --background-color: #4997d0;
+  /* rgba(2, 78, 116, 0.254); */
+  --colorGlobosBackground: #4997d0;
+  /* #ececec; */
+  --colorBody: #7b68ee;
+  /* #ddb892; */
+  --colorSombras: #9eb9d4;
+  /* rgba(0, 0, 0, 0.336); */
+  border-radius: 3%;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-style: bold;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 1px;
+  text-align: center;
+  background-color: var(--colorBody);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5 rem;
+  padding: 2rem;
+  border: 1px solid black;
+  background-color: #e3dac9;
+  border-radius: 25%;
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-bottom: 3rem;
+}
+
+button {
+  font-size: 20px;
+  height: 4rem;
+  width: 14rem;
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 12px 6px var(--colorSombras);
+  background: var(--colorGlobosBackground);
+}
+
+ul {
+  list-style: none;
+}
+
+#contadores {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin: 0 1rem;
+}
+
+.con {
+  margin: 1rem;
+}
+header {
+  margin-top: 3rem;
+}
+
+@media (min-width: 600px) {
+  /* body {
+    display: grid;
+    grid-template-columns: auto;
+  } */
+  img {
+    height: 64px;
+    width: 64px;
+  }
+
+  div {
+    display: flex;
+
+    justify-content: center;
+  }
+  header > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  h2 {
+    max-width: 500px;
+  }
+  button {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+  h2 {
+    max-width: 500px;
+  }
+  button:hover {
+    background: rgba(38, 38, 82, 0.435);
+    color: white;
+    height: 4.5rem;
+    width: 14.5rem;
+    text-decoration: underline 6px var(--colorSombras);
+    cursor: pointer;
+  }
+}
